@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NestHouse - Embark on Your Home Quest Today!</title>
+    <meta name="description" content="Revolutionary platform that transforms home buying into an immersive, personalized journey with VR tours, AI matching, and gamified experiences.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-home brand-icon"></i>
+                <span class="brand-text">NestHouse</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#listings" class="nav-link">Listings</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-video-container">
+                <video autoplay muted loop class="hero-video">
+                    <source src="https://player.vimeo.com/external/342333493.sd.mp4?s=47c2496b8f2c9c4c7b1b8b8b8b8b8b8b&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-brand">
+                <i class="fas fa-home hero-icon"></i>
+                <h1 class="hero-brand-name">NestHouse</h1>
+            </div>
+            
+            <h2 class="hero-title">
+                Embark on Your<br>
+                <span class="highlight-text">Home Quest</span><br>
+                Today!
+            </h2>
+            
+            <p class="hero-subtitle">
+                Transform home buying into an immersive, personalized journey with VR tours, 
+                AI recommendations, and gamified experiences.
+            </p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary hero-btn" id="start-quest-btn">
+                    <i class="fas fa-rocket"></i>
+                    Start Your Quest
+                </button>
+                <button class="btn btn-secondary hero-btn" id="watch-demo-btn">
+                    <i class="fas fa-play"></i>
+                    Watch Demo
+                </button>
+            </div>
+            
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <i class="fas fa-cube"></i>
+                    <span>VR Tours</span>
+                </div>
+                <div class="hero-feature">
+                    <i class="fas fa-brain"></i>
+                    <span>AI Matching</span>
+                </div>
+                <div class="hero-feature">
+                    <i class="fas fa-trophy"></i>
+                    <span>Quest Mode</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About NestHouse</h2>
+                <p class="section-subtitle">
+                    Revolutionary platform that transforms home buying into an immersive, personalized journey
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-icon vr-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3 class="about-title">VR Home Tours</h3>
+                    <p class="about-description">
+                        Immersive 360° virtual reality tours that let you explore every corner of your potential new home.
+                    </p>
+                </div>
+                
+                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="about-icon ai-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="about-title">AI-Powered Matching</h3>
+                    <p class="about-description">
+                        Smart recommendations based on your lifestyle, preferences, and budget for the perfect home match.
+                    </p>
+                </div>
+                
+                <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="about-icon quest-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="about-title">Quest Mode</h3>
+                    <p class="about-description">
+                        Gamified home hunting with points, achievements, and exclusive rewards for completing challenges.
+                    </p>
+                </div>
+                
+                <div class="about-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="about-icon eco-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="about-title">Eco-Friendly Focus</h3>
+                    <p class="about-description">
+                        Discover sustainable homes with carbon footprint calculators and green living insights.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10000">0</div>
+                    <div class="stat-label">Happy Questers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="5000">0</div>
+                    <div class="stat-label">Homes Listed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Revolutionary Features</h2>
+                <p class="section-subtitle">
+                    Experience the future of home buying with our cutting-edge technology
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-right">
+                    <div class="feature-content">
+                        <h3 class="feature-title">Quest Mode Gaming</h3>
+                        <p class="feature-description">
+                            Turn home hunting into an adventure! Complete challenges, earn points, 
+                            and unlock exclusive deals and priority viewings.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Earn points for property visits</li>
+                            <li><i class="fas fa-check"></i> Unlock exclusive discounts</li>
+                            <li><i class="fas fa-check"></i> Priority viewing access</li>
+                            <li><i class="fas fa-check"></i> Achievement badges</li>
+                        </ul>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="quest-demo">
+                            <div class="quest-card">
+                                <i class="fas fa-trophy quest-trophy"></i>
+                                <div class="quest-info">
+                                    <h4>Daily Quest</h4>
+                                    <p>Visit 3 VR Tours</p>
+                                    <div class="quest-progress">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 66%"></div>
+                                        </div>
+                                        <span>2/3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-left">
+                    <div class="feature-visual">
+                        <div class="ai-demo">
+                            <div class="ai-card">
+                                <i class="fas fa-brain ai-brain"></i>
+                                <div class="ai-info">
+                                    <h4>AI Recommendation</h4>
+                                    <p>Based on your preferences</p>
+                                    <div class="match-score">
+                                        <span class="score">94%</span>
+                                        <span class="match-text">Perfect Match!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Smart AI Matching</h3>
+                        <p class="feature-description">
+                            Our advanced AI analyzes your lifestyle, preferences, and budget 
+                            to recommend homes that truly fit your needs.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Lifestyle-based matching</li>
+                            <li><i class="fas fa-check"></i> Budget optimization</li>
+                            <li><i class="fas fa-check"></i> Preference learning</li>
+                            <li><i class="fas fa-check"></i> Smart notifications</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-right">
+                    <div class="feature-content">
+                        <h3 class="feature-title">Immersive VR Tours</h3>
+                        <p class="feature-description">
+                            Step inside your future home with cutting-edge VR technology. 
+                            Explore every room, feel the space, and make informed decisions.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> 360° virtual reality</li>
+                            <li><i class="fas fa-check"></i> Interactive hotspots</li>
+                            <li><i class="fas fa-check"></i> Measurement tools</li>
+                            <li><i class="fas fa-check"></i> Virtual staging</li>
+                        </ul>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="vr-demo">
+                            <div class="vr-headset">
+                                <i class="fas fa-vr-cardboard"></i>
+                            </div>
+                            <div class="vr-waves">
+                                <div class="wave"></div>
+                                <div class="wave"></div>
+                                <div class="wave"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Listings -->
+    <section id="listings" class="listings">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Listings</h2>
+                <p class="section-subtitle">
+                    Discover your perfect nest with our curated selection
+                </p>
+            </div>
+            
+            <div class="listings-carousel" id="listings-carousel">
+                <!-- Listings will be dynamically generated -->
+            </div>
+            
+            <div class="carousel-controls">
+                <button class="carousel-btn prev-btn" id="prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-dots" id="carousel-dots">
+                    <!-- Dots will be dynamically generated -->
+                </div>
+                <button class="carousel-btn next-btn" id="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div class="view-all-container">
+                <button class="btn btn-outline view-all-btn">
+                    View All Listings
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Questers Say</h2>
+                <p class="section-subtitle">
+                    Join thousands of happy homeowners who found their perfect nest
+                </p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "NestHouse made home buying feel like a game! The VR tours saved me so much time, 
+                            and the quest system made it actually fun. Found my dream home in just 2 weeks!"
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=2" alt="Sarah Johnson" class="author-avatar">
+                        <div class="author-info">
+                            <h4 class="author-name">Sarah Johnson</h4>
+                            <p class="author-title">First-time Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "The AI recommendations were spot-on! It understood exactly what I was looking for 
+                            and showed me homes I never would have found otherwise. Revolutionary platform!"
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=2" alt="Mike Chen" class="author-avatar">
+                        <div class="author-info">
+                            <h4 class="author-name">Mike Chen</h4>
+                            <p class="author-title">Tech Professional</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Love the eco-friendly focus! The carbon footprint calculator helped me choose 
+                            a sustainable home. Plus, earning points while house hunting was surprisingly addictive!"
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=2" alt="Emma Rodriguez" class="author-avatar">
+                        <div class="author-info">
+                            <h4 class="author-name">Emma Rodriguez</h4>
+                            <p class="author-title">Environmental Scientist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="social-proof">
+                <p class="social-proof-text">As featured in:</p>
+                <div class="media-logos">
+                    <div class="media-logo">Forbes</div>
+                    <div class="media-logo">TechCrunch</div>
+                    <div class="media-logo">Wired</div>
+                    <div class="media-logo">The Verge</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Start Your Home Quest?</h2>
+                <p class="cta-subtitle">
+                    Join thousands of happy questers who found their perfect nest through our revolutionary platform
+                </p>
+                
+                <form class="cta-form" id="signup-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="preferences" name="preferences" required>
+                            <option value="">Select Your Preference</option>
+                            <option value="family-friendly">Family-Friendly</option>
+                            <option value="eco-sustainable">Eco-Sustainable</option>
+                            <option value="urban-chic">Urban Chic</option>
+                            <option value="countryside">Countryside</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary cta-btn">
+                        <i class="fas fa-rocket"></i>
+                        Start Free Quest
+                    </button>
+                </form>
+                
+                <div class="cta-secondary">
+                    <button class="btn btn-outline download-btn" id="download-brochure">
+                        <i class="fas fa-download"></i>
+                        Download Brochure
+                    </button>
+                </div>
+                
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Free to start</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check"></i>
+                        <span>No credit card required</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Cancel anytime</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand">
+                        <i class="fas fa-home brand-icon"></i>
+                        <span class="brand-text">NestHouse</span>
+                    </div>
+                    <p class="footer-description">
+                        Transforming home buying into an immersive, personalized journey.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Platform</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">VR Tours</a></li>
+                            <li><a href="#" class="footer-link">AI Matching</a></li>
+                            <li><a href="#" class="footer-link">Quest Mode</a></li>
+                            <li><a href="#" class="footer-link">Mobile App</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">About Us</a></li>
+                            <li><a href="#" class="footer-link">Careers</a></li>
+                            <li><a href="#" class="footer-link">Press</a></li>
+                            <li><a href="#" class="footer-link">Blog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Support</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Help Center</a></li>
+                            <li><a href="#" class="footer-link">Contact Us</a></li>
+                            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2024 NestHouse. All rights reserved. Embark on Your Home Quest Today!
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Particles Container -->
+    <div id="particles-container"></div>
+
+    <!-- Modal for VR Tour Demo -->
+    <div id="vr-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="vr-demo-container">
+                <h3>VR Tour Demo</h3>
+                <div class="vr-viewer">
+                    <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800" alt="VR Tour" class="vr-image">
+                    <div class="vr-controls">
+                        <button class="vr-btn"><i class="fas fa-expand"></i></button>
+                        <button class="vr-btn"><i class="fas fa-volume-up"></i></button>
+                        <button class="vr-btn"><i class="fas fa-info"></i></button>
+                    </div>
+                </div>
+                <p>Experience immersive 360° tours of your future home!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/listings.js"></script>
+</body>
+</html>
